@@ -1,0 +1,74 @@
+body{
+    background-color: lavender;
+    width: 800px;
+    margin: 20px auto;
+    align-content: center;
+}
+
+.textArea{
+    height: 10em;
+    width: 80%;
+    resize: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.keyboard{
+    background-color: darkcyan;
+    height: 80%;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.key, .backspace, .tab, .capsLock, .enter, .shift, .alt, .space , .delete, .ctrlRight{
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    margin: 4px;
+    background-color: cornflowerblue;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.backspace{
+    width: 88px;
+}
+
+.tab{
+    width: 56px;
+}
+
+.capsLock{
+    width: 67px;
+    font-size: 13px;
+}
+
+.delete{
+    width: 61px;
+}
+
+.enter{
+    width: 72px;
+}
+.shift{
+    width: 88px;
+}
+.alt{
+    width: 50px;
+}
+.space{
+    width: 346px;
+}
+.ctrlRight{
+
+}
+.press{
+    background-color: yellow;
+}
+
+.key:hover, .backspace:hover, .tab:hover, .capsLock:hover, .enter:hover, .shift:hover, .alt:hover, .space:hover, .delete:hover, .ctrlRight:hover {
+    background-color: #6471ed;
+}
