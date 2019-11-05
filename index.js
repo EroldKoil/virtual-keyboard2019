@@ -1,6 +1,7 @@
 let lang = 'ru';
 let shift = false;
 
+
 const textarea = document.querySelector('.textArea');
 
 document.addEventListener('keydown' , function (event){

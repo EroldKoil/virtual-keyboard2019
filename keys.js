@@ -1,3 +1,14 @@
+
+const body = document.querySelector('body')
+const textarea = document.createElement("textarea");
+textarea.autofocus;
+textarea.className = 'textArea';
+const keyboard = document.createElement("div");
+keyboard.className = 'keyboard';
+
+body.appendChild(textarea);
+body.appendChild(keyboard);
+
 function Key(code, isWrite, ru, ruShift, en, enShift ,className) {
     this.code = code;
     this.isWrite = isWrite;
@@ -82,9 +93,7 @@ let keysArray = [
 createKeyboard('ru', false);
 
 function createKeyboard(lang , shift) {
-
-    let keyboard = '';
-
+    let keyboardContent = '';
     for(let i = 0; i < keysArray.length; i++){
         let key = keysArray[i];
         let className = key.className == undefined?'key':key.className;
@@ -95,9 +104,9 @@ function createKeyboard(lang , shift) {
        else {
             keyText = key.ru;
         }
-        keyboard += `<div class ="${className}" id = ${key.code}> ${keyText}</div>`
+        keyboardContent += `<div class ="${className}" id = ${key.code}> ${keyText}</div>`
     }
-    document.querySelector('.keyboard').innerHTML = keyboard;
+    keyboard.innerHTML = keyboardContent;
 }
 
 
