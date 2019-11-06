@@ -46,7 +46,7 @@ let keysArray = [
     new Key('Tab' , false, 'Tab', '', '', '', 'tab'),
     new Key('KeyQ' , true, 'й', 'Й', 'q', 'Q'),
     new Key('KeyW' , true, 'ц', 'Ц', 'w', 'W'),
-    new Key('KeyE' , true, 'e', 'У', 'e', 'E'),
+    new Key('KeyE' , true, 'у', 'У', 'e', 'E'),
     new Key('KeyR' , true, 'к', 'К', 'r', 'R'),
     new Key('KeyT' , true, 'е', 'Е', 't', 'T'),
     new Key('KeyY' , true, 'н', 'Н', 'y', 'Y'),
