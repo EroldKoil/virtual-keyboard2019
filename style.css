@@ -7,17 +7,19 @@ body{
 
 .textArea{
     height: 10em;
-    width: 80%;
+    width: 48em;
     resize: none;
     margin: 0 auto;
     display: block;
+    font-size: 16px;
 }
 
 .keyboard{
-    background-color: darkcyan;
+    background-color: #555079;
     height: 80%;
     width: 90%;
     margin: 50px auto;
+    border-radius: 8px;
 }
 
 .key, .backspace, .tab, .capsLock, .enter, .shift, .alt, .space , .delete, .ctrlRight{
@@ -25,7 +27,7 @@ body{
     height: 40px;
     width: 40px;
     margin: 4px;
-    background-color: cornflowerblue;
+    background-color: #aac8ff;
     justify-content: center;
     border-radius: 5px;
     align-items: center;
@@ -67,8 +69,33 @@ body{
 }
 .press{
     background-color: yellow;
+    animation: pressing 0.5s;
 }
 
 .key:hover, .backspace:hover, .tab:hover, .capsLock:hover, .enter:hover, .shift:hover, .alt:hover, .space:hover, .delete:hover, .ctrlRight:hover {
     background-color: #6471ed;
+}
+.image{
+    height: 31%;
+}
+
+@keyframes pressing {
+    0%{
+        border-radius: 5px;
+        position: relative;
+        top: 0px;
+    }
+    10%{
+        border-radius: 5px;
+        position: relative;
+        top: 5px;
+    }
+    50%{
+        position: relative;
+        top: 0px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+    }
 }
