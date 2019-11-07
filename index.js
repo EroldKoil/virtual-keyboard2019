@@ -162,16 +162,14 @@ createKeyboard();
 
 for(let i = 0; i < keysArray.length; i++) {
     document.getElementById(keysArray[i].code).addEventListener('mousedown', function() {
-        textarea.focus();
         let key = document.getElementById(keysArray[i].code);
         key.classList.add('press');
         choiceEvent(keysArray[i].code);
 
-
     });
     document.getElementById(keysArray[i].code).addEventListener('mouseup', function() {
         let key = document.getElementById(keysArray[i].code);
-
+        textarea.focus();
         if(keysArray[i].code != 'CapsLock' &&
             keysArray[i].code != 'ShiftRight' &&
             keysArray[i].code != 'ShiftLeft' &&
